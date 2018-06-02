@@ -1,0 +1,20 @@
+PODS:
+  - ReactiveObjC (3.1.0)
+  - WebViewJavascriptBridge (5.0.9)
+
+DEPENDENCIES:
+  - ReactiveObjC
+  - WebViewJavascriptBridge (~> 5.0.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReactiveObjC
+    - WebViewJavascriptBridge
+
+SPEC CHECKSUMS:
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  WebViewJavascriptBridge: a4390df79bf622fc068dd035c8b5f67590c0ba05
+
+PODFILE CHECKSUM: a484a1605d7042045e1acd43bff11afb9b665a88
+
+COCOAPODS: 1.5.3

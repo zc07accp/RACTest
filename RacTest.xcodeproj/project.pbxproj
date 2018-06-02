@@ -13,6 +13,7 @@
 		00069B4B20BBF21C0002B3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00069B4A20BBF21C0002B3F8 /* Assets.xcassets */; };
 		00069B4E20BBF21C0002B3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00069B4C20BBF21C0002B3F8 /* LaunchScreen.storyboard */; };
 		00069B5120BBF21C0002B3F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00069B5020BBF21C0002B3F8 /* main.m */; };
+		A15AC2436B43D3AB3F8B0CCA /* libPods-RacTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B9AC3C757B25C4659633F6 /* libPods-RacTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		00069B4D20BBF21C0002B3F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00069B4F20BBF21C0002B3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00069B5020BBF21C0002B3F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25B9AC3C757B25C4659633F6 /* libPods-RacTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RacTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FE08B04A18D354D0DF6EC9 /* Pods-RacTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RacTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RacTest/Pods-RacTest.release.xcconfig"; sourceTree = "<group>"; };
+		7C2E679CFFA3F37A58E2C4D6 /* Pods-RacTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RacTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RacTest/Pods-RacTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15AC2436B43D3AB3F8B0CCA /* libPods-RacTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				00069B4020BBF21C0002B3F8 /* RacTest */,
 				00069B3F20BBF21C0002B3F8 /* Products */,
+				BE74DD8909585970E80F57A3 /* Pods */,
+				67700DD4F22FCB68FFB61048 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = RacTest;
 			sourceTree = "<group>";
 		};
+		67700DD4F22FCB68FFB61048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25B9AC3C757B25C4659633F6 /* libPods-RacTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE74DD8909585970E80F57A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C2E679CFFA3F37A58E2C4D6 /* Pods-RacTest.debug.xcconfig */,
+				32FE08B04A18D354D0DF6EC9 /* Pods-RacTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00069B5420BBF21C0002B3F8 /* Build configuration list for PBXNativeTarget "RacTest" */;
 			buildPhases = (
+				2F40C11C0DB1D3BEC527DEF3 /* [CP] Check Pods Manifest.lock */,
 				00069B3A20BBF21C0002B3F8 /* Sources */,
 				00069B3B20BBF21C0002B3F8 /* Frameworks */,
 				00069B3C20BBF21C0002B3F8 /* Resources */,
@@ -97,7 +122,7 @@
 		00069B3620BBF21C0002B3F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = lwh;
 				TargetAttributes = {
 					00069B3D20BBF21C0002B3F8 = {
@@ -136,6 +161,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F40C11C0DB1D3BEC527DEF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RacTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00069B3A20BBF21C0002B3F8 /* Sources */ = {
@@ -184,6 +230,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -191,6 +238,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -239,6 +287,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -246,6 +295,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -276,6 +326,7 @@
 		};
 		00069B5520BBF21C0002B3F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2E679CFFA3F37A58E2C4D6 /* Pods-RacTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +340,7 @@
 		};
 		00069B5620BBF21C0002B3F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32FE08B04A18D354D0DF6EC9 /* Pods-RacTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
